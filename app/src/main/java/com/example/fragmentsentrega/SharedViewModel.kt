@@ -5,6 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
-    // LiveData para almacenar el texto a mostrar en el segundo fragment
+    // Almaceno el texto a mostrar en el segundo fragment
     val textoLiveData = MutableLiveData<String>()
 }

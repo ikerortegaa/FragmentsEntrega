@@ -26,10 +26,10 @@ class SegundoFragmento : Fragment() {
         textView = view.findViewById(R.id.textView)
         botonVolver = view.findViewById(R.id.botonVolver)
 
-        // Obtiene una referencia al ViewModel compartido
+        // Obtiene una referencia al ViewModel compartido, lo utilizo pa
         viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
 
-        // Observa el LiveData y actualiza el textView cuando cambia
+        // Cuando cambia el etxtData, actualizo el textView
         viewModel.textoLiveData.observe(viewLifecycleOwner, Observer {
             textView.text = "Hola $it" //Para que el texto del EditText del fragment 1 se concatene a la palabra hola
         })

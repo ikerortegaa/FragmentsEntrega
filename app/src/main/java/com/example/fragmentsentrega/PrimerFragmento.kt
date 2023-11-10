@@ -8,7 +8,6 @@ import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 
-// En PrimerFragmento.kt
 class PrimerFragmento : Fragment() {
 
     private lateinit var viewModel: SharedViewModel

@@ -3,9 +3,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.fragmentsentrega.R
 
-// En MainActivity.kt
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var primerFragmento: PrimerFragmento
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         primerFragmento = PrimerFragmento()
         segundoFragmento = SegundoFragmento()
-        viewModel = ViewModelProvider(this).get(SharedViewModel::class.java)
+        viewModel = ViewModelProvider(this)[SharedViewModel::class.java]
 
         // Inicia el PrimerFragmento
         supportFragmentManager.beginTransaction()

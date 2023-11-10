@@ -1,7 +1,6 @@
-<!-- fragment_segundo.xml -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,12 +24,12 @@
 
     <Button
         android:id="@+id/botonVolver"
-        android:background="@color/white"
-        android:textColor="@color/purple_700"
-        android:layout_width="215dp"
-        android:layout_height="92dp"
+        android:layout_width="190dp"
+        android:layout_height="64dp"
         android:layout_marginTop="272dp"
+        android:background="@color/white"
         android:text="@string/volver"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -38,7 +37,5 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.661" />
 
-
-    <!-- Puedes agregar más elementos de la interfaz de usuario si es necesario -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
